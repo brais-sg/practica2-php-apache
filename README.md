@@ -245,9 +245,18 @@ tras este comando, habilitaremos SSL en el servidor. Debemos modificar el defaul
 ```
 
 Ahora, vamos a generar los certificados usando el siguiente comando:
-```s
+```bash
 mkdir /etc/apache2/certificate
 cd /etc/apache2/certificate
 openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out apache-certificate.crt -keyout apache.key
 ```
 
+Una vez generados los certificados, se modificará el fichero ```default-ssl.conf``` en consecuencia, dado a que tenemos que darle
+la ruta de donde se encuentran nuestros certificados
+```conf
+SSLCertificateFile	/etc/apache2/certificate/apache-certificate.crt
+SSLCertificateKeyFile /etc/apache2/certificate/apache.key
+```
+
+Dados estos pasos, y acordándonos de añadir el puerto 433 al fichero ```docker-compose.yml``` tendremos iniciado el servidor escuchando en el puerto
+443

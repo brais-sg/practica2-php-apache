@@ -37,3 +37,6 @@ Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
 [2022-11-23T17:39:16Z ERROR glean_core::database] Failed to record metric into glean_internal_info: Error { kind: Rkv(IoError(Os { code: 13, kind: PermissionDenied, message: "Permission denied" })) }
 [2022-11-23T17:39:16Z ERROR glean_core::database] Failed to record metric into glean_internal_info: Error { kind: Rkv(IoError(Os { code: 13, kind: PermissionDenied, message: "Permission denied" })) }
 [2022-11-23T17:39:16Z ERROR glean_core::database] Failed to record metric into glean_internal_info: Error { kind: Rkv(IoError(Os { code: 13, kind: PermissionDenied, message: "Permission denied" })) }
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
